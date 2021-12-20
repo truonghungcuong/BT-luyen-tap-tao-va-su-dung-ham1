@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="thamso1" placeholder="Tham số 1" onchange="showKetqua()" oninput="showKetqua()">
+<input type="number" id="thamso2" placeholder="Tham số 2" onchange="showKetqua()" oninput="showKetqua()">
+<p id="ketqua"></p>
+<script>
+    function showKetqua(){
+        let number1=document.getElementById("thamso1").value;
+        let number2=document.getElementById("thamso2").value;
+        if (number1>number2){
+            document.getElementById("ketqua").innerHTML="Tham số 1 lớn hơn tham số 2";
+        }else if (number1<=number2){
+            document.getElementById("ketqua").innerHTML="Tham số 1 nhỏ hơn tham số 2 và tổng 2 tham số= "+( parseInt(number1)+parseInt(number2));
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tensao=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let tenchomsao=["UrsaMinor","Tarurus","Cygnus","Lyra","Aquila","UrsaMajor","Leo"]
+    let index=-1;
+    function checkStar(star){
+            if (tensao.indexOf(star) !== -1){
+                index=tensao.indexOf(star);
+                return true;
+            }return false
+        }
+    let star=prompt();
+    if (checkStar(star)===true){
+        alert(tenchomsao[index]);
+    }else {
+        alert("không có");
+    }
+</script>
+</body>
+</html>
